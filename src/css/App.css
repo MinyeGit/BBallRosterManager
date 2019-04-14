@@ -1,0 +1,45 @@
+.add-player .card-body {
+  display: none;
+}
+
+.player-addheading {
+  cursor: pointer;
+  user-select: none;
+}
+
+.roster-list {
+  font-size: 1.1em;
+}
+
+.roster-list .player-item {
+  border-bottom: 1px dotted gray;
+}
+
+.roster-list .player-item:last-child {
+  border-bottom: none;
+}
+
+.roster-list .player-name {
+  font-weight: 600;
+  color: #337ab7;
+  font-size: 1.3em;
+  line-height: 100%;
+}
+
+.roster-list .label-item {
+  font-weight: 600;
+  color: #667b82;
+}
+
+.roster-list .birthday {
+  font-style: italic;
+}
+
+.roster-list .scouting-report {
+  line-height: 120%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #a9aeb2;
+}
