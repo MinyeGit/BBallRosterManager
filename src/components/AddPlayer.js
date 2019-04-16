@@ -5,34 +5,34 @@ class AddPlayer extends Component {
   constructor() {
     super();
     this.state = {
-      playerName: '',
-      agent: '',
-      birthday: '',
-      scoutingReport: ''
+      playerName: "",
+      agent: "",
+      birthday: "",
+      scoutingReport: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
   }
 
   handleAdd(event) {
-      event.preventDefault();
-      let temp = {
-          playerName: this.state.playerName,
-          agent: this.state.agent,
-          birthday: this.state.birthday,
-          scoutingReport: this.state.scoutingReport
-      };
+    event.preventDefault();
+    let temp = {
+      playerName: this.state.playerName,
+      agent: this.state.agent,
+      birthday: this.state.birthday,
+      scoutingReport: this.state.scoutingReport
+    };
 
-      this.props.addPlayer(temp);
+    this.props.addPlayer(temp);
 
-      this.setState({
-        playerName: '',
-        agent: '',
-        birthday: '',
-        scoutingReport: ''
-      });
+    this.setState({
+      playerName: "",
+      agent: "",
+      birthday: "",
+      scoutingReport: ""
+    });
 
-      this.props.toggleForm();
+    this.props.toggleForm();
   }
 
   handleChange(event) {
@@ -53,15 +53,14 @@ class AddPlayer extends Component {
         }
       >
         <div
-          className="player-addheading card-header bg-primary text-white"
+          className="player-addheading card-header bg-success text-white"
           onClick={this.props.toggleForm}
         >
           <MdPersonAdd /> Add A Player
         </div>
 
-        <div className="card-body">
-          <form id="playerForm" noValidate 
-            onSubmit={this.handleAdd}>
+        <div className="card-body bg-success text-white">
+          <form id="playerForm" noValidate onSubmit={this.handleAdd}>
             <div className="form-group form-row">
               <label
                 className="col-md-2 col-form-label text-md-right"
