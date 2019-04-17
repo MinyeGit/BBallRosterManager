@@ -8,13 +8,36 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <style> 
+      #div2 {
+        width: 500px;
+        height: 50px;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 10s infinite;
+      }
+
+      #div2 {animation-timing-function: ease;}
+    
+      @keyframes mymove {
+        0% {
+    left: 0;
+  }
+  50% {
+    left: 720px;
+  }
+  100% {
+    left: 0;
+  }
+      }
+      </style>
     <title>Basketball Roster Manager</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <header class="container text-white">
-      <h1 class="py-2" style="text-align:center">Basketball Roster Manager</h1>
+      <h1 id = "div2" class="py-2" style="text-align:center">Basketball Roster Manager</h1>
     </header>
     
     <div id="root"></div>
