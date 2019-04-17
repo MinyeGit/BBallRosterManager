@@ -21,8 +21,12 @@ $ npm start
  - You can freely search a player with any keyword, like his name, birthday, or scouting report, with real time result. Pick the player you want!
  - You can also add players to or delete them from your roster anytime as you wish.
  ![Minye WU](https://github.com/MinyeGit/BBallRosterManager/blob/master/src/search%20and%20add.gif)
+ 
+ 
  - Real time modification to player info. 
  ![Minye Wu](https://github.com/MinyeGit/BBallRosterManager/blob/master/src/modification.gif)
+
+
  - Display players' info in any order you want. 
  ![Minye Wu](https://github.com/MinyeGit/BBallRosterManager/blob/master/src/sorting.gif)
 
